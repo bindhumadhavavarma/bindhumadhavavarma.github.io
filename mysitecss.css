@@ -9,11 +9,12 @@ a:link,a:visited{
   margin-bottom: 10px;
   font-size: 50px;
   width: 250px;
+  padding: 10px 10px 10px 10px;
 }
 a:hover,a:active{
   color:rgb(255, 115, 0);
   border:2px solid rgb(255, 115, 0);
-  background-color: black;
+  background-color:black;
 }
 footer{text-align:center;font-size: 30px;}
 body{background-color: lightblue;}
