@@ -16,5 +16,9 @@ a:hover,a:active{
   border:2px solid rgb(255, 115, 0);
   background-color:black;
 }
-footer{text-align:center;font-size: 30px;}
-body{background-color: lightblue;}
+footer{text-align:center;font-size: 30px;color:wheat}
+body{
+  background-color: lightblue;
+  background-image: url(car.jpg);
+  background-size: 1560px 840px;
+}
