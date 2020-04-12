@@ -2,12 +2,51 @@
 <html>
   <head>
     <title>My site</title>
-    <link rel="stylesheet" href="mysitecss.css">
-    <style>body{
-      background-image: url(car.jpg);
-      background-size: 1560px 840px;
-      background-repeat: no-repeat;
-    }</style>
+   
+    <style>
+      body{
+        background-image: url(car.jpg);
+        background-size: 1560px 840px;
+        background-repeat: no-repeat;
+      }
+      *{
+  box-sizing: border-box;
+}
+a:link,a:visited{
+  clear: right;
+  text-decoration: none;
+  background-color: rgb(255, 115, 0);
+  border:2px solid black;
+  color: black;
+  display:block;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 50px;
+  width: 300px;
+  padding: 10px 10px 10px 10px;
+  background-repeat: repeat-y;
+}
+a:hover,a:active{
+  color:rgb(255, 115, 0);
+  border:2px solid rgb(255, 115, 0);
+  background-color:black;
+}
+header{float: left;}
+footer{text-align:center;font-size: 30px;color:wheat;clear: left;}
+p{
+  font-size: 20px;
+  color:wheat;
+  font-weight: bold;
+  float: right;
+  width:50%;
+  background-color: gray;
+  backface-visibility: visible;
+  padding:20px;
+  margin-top: 30px;
+  margin-right:50px;
+}
+
+      </style>
   </head>
   <body>
     <header>
