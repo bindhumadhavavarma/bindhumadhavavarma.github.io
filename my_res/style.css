@@ -44,14 +44,15 @@ body{
   padding: 0px;}
 #indiv1:hover,#indiv2:hover,#indiv3:hover{box-shadow: 0 0 10px black;}
 
-#indiv1{
+#indiv1>a>div{
   background: url('menutile.jpg') no-repeat;
   background-position: center;
-  
+  height: 100%;
 }
-#indiv2{
+#indiv2>a>div{
   background: url('combo.jpg') no-repeat;
   background-position: center;
+  height: 100%;
 }
 #indiv1>a>span,#indiv2>a>span,#indiv3>a>span{
   position: absolute;
@@ -67,7 +68,8 @@ body{
 @media (max-width:575px){
 
   #indiv1,#indiv2,#indiv3{width: 75%;margin: 0 auto 15px;
-}}
+}
+#indiv1{margin-top: 15px;}}
 
 .panel-footer{
   background-color: #222;
