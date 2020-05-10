@@ -28,7 +28,7 @@ body{
   #contents{padding: 100px;padding-top: 30px;padding-bottom: 30px;}
   .container{padding-left: 100px;padding-right: 100px;padding: 0px;}
 }
-#tiles{margin: 0px;}
+#tiles{padding-left: 50px;padding-right: 50px;}
 #menutile,#combo,#map{
   height: 250px;
   width:100%;
