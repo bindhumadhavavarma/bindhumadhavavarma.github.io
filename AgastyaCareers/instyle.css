@@ -1,0 +1,120 @@
+
+*{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background-color:rgb(231, 225, 225);
+  box-sizing: border-box;
+}
+.dropdown-submenu {
+  position: relative;
+}
+
+
+
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+@media (min-width:992px){
+.dropdown:hover>.dropdown-menu {
+  display: block;
+  margin-top: 0px;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}}
+
+
+
+.navbar{
+  padding-bottom: 0px;
+ 
+}
+
+#searchbar{
+  margin-bottom: 10px;
+}
+
+#container{
+  background-image: url('home.jpg');
+ margin-left: 5%;
+  margin-top: 50px;
+  margin-right: 5%;
+  background-position: center;
+  height: 400px;
+  background-repeat: no-repeat;
+  position: relative;
+
+} 
+#content{
+  position: relative;
+  top: 40%;
+  text-align: center;
+  color: black;
+}
+#foot{
+  background-color: black;
+  margin-top: 50px;
+}
+#footcon{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+  text-align: center;
+}
+hr { background-color: white; height: 1px; border: 0; }
+#text{
+  margin-top: 50px;
+}
+#tiles{padding-left: 70px;padding-right: 70px;margin: 0px;}
+#menutile,#combo,#map{
+  height: 250px;
+  width:100%;
+  padding: 0px;
+}
+#indiv1,#indiv2,#indiv3{
+  margin: 15px;border: 1px solid black;
+  height: 220px;
+  
+  position: relative;
+  border: 1px solid black;
+  overflow: hidden;
+  padding: 0px;}
+#indiv1:hover,#indiv2:hover,#indiv3:hover{box-shadow: 0 0 10px black;}
+
+#indiv1>a>div{
+  background: url('home.jpg') no-repeat;
+  background-position: center;
+  height: 100%;
+}
+#indiv2>a>div{
+  background: url('home.jpg') no-repeat;
+  background-position: center;
+  height: 100%;
+}
+#indiv1>a>span,#indiv2>a>span,#indiv3>a>span{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  opacity: 0.8;
+  color: whitesmoke;
+  font-size: 20px;
+}
