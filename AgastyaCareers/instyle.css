@@ -36,6 +36,9 @@ body{
   /*Without this, clicking will make it sticky*/
     pointer-events: none;
 }}
+
+
+
 .navbar{
   padding-bottom: 0px;
 }
