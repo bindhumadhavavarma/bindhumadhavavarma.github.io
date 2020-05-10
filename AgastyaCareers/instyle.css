@@ -17,7 +17,7 @@ body{
   margin-top: 0px;
   margin-left: 0px;
 }
-
+@media (min-width:992px){
 .dropdown:hover>.dropdown-menu {
   display: block;
   margin-top: 0px;
@@ -35,7 +35,7 @@ body{
 .dropdown-submenu>.dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/
     pointer-events: none;
-}
+}}
 .navbar{
   padding-bottom: 0px;
 }
