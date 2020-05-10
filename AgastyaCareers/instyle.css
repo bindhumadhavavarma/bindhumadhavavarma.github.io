@@ -42,3 +42,7 @@ body{
 .navbar{
   padding-bottom: 0px;
 }
+
+#searchbar{
+  margin-bottom: 10px;
+}
