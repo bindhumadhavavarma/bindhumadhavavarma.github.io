@@ -81,7 +81,7 @@ hr { background-color: white; height: 1px; border: 0; }
 #text{
   margin-top: 50px;
 }
-#tiles{padding-left: 70px;padding-right: 70px;}
+#tiles{padding-left: 70px;padding-right: 70px;margin: 0px;}
 #menutile,#combo,#map{
   height: 250px;
   width:100%;
