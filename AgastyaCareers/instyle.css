@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  background-color:rgb(231, 225, 225);
+  background-color:rgb(199, 196, 196);
   box-sizing: border-box;
 }
 .dropdown-submenu {
@@ -83,19 +83,19 @@ hr { background-color: white; height: 1px; border: 0; }
 }
 #tiles{padding-left: 70px;padding-right: 70px;margin: 0px;}
 #menutile,#combo,#map{
-  height: 250px;
+  height: 330px;
   width:100%;
   padding: 0px;
 }
 #indiv1,#indiv2,#indiv3{
-  margin: 15px;border: 1px solid black;
-  height: 220px;
+  margin: 15px;
+  height: 300px;
   
   position: relative;
-  border: 1px solid black;
+  box-shadow: 0 0 10px rgb(134, 132, 132);
   overflow: hidden;
   padding: 0px;}
-#indiv1:hover,#indiv2:hover,#indiv3:hover{box-shadow: 0 0 10px black;}
+#indiv1:hover,#indiv2:hover,#indiv3:hover{box-shadow: 0 0 20px rgb(20, 20, 20);}
 
 #indiv1>a>div{
   background: url('home.jpg') no-repeat;
@@ -120,4 +120,10 @@ hr { background-color: white; height: 1px; border: 0; }
 }
 #container{
   margin-top: 100px;
+}
+@media (max-width:575px){
+  #tiles{
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 }
