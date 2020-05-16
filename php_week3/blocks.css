@@ -1,0 +1,40 @@
+   body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#one{
+    border: 5px solid blue;
+    width: 250px;
+    position: absolute;
+    top: 250px;
+    left: 82.5%;
+    padding: 5px;
+}
+#two{ 
+  border: 5px solid green;
+  width: 250px;
+  float: right;
+  padding: 5px;
+}
+#three{
+  border: 5px solid orange;
+  width: 250px;
+  padding: 5px;
+}
+#four{
+  border: 5px solid yellow;
+  width: 250px;
+  position: absolute;
+  top: 250px;
+  padding: 5px;
+}
+a{
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  position: relative;
+  left: 46%;
+  bottom: 115px;
+}
