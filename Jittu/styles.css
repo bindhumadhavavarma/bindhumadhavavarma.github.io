@@ -1,6 +1,6 @@
 body{
   background-image: url(Background.jpeg);
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: 100%;
   background-blend-mode: normal;
 }
