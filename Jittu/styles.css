@@ -1,9 +1,4 @@
-body{
-  background-image: url(Background.jpeg);
-  background-repeat: repeat-y;
-  background-size: 100%;
-  background-blend-mode: normal;
-}
+
 h2{
   color: aliceblue;
 }
@@ -14,7 +9,22 @@ h2{
   text-decoration: underline;
   
 }
-
+@media(min-width:600px){
+  body{
+    background-image: url(Background.jpeg);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-blend-mode: darken;
+  }
+}
+@media(max-width:599px){
+  body{
+    background-image: url(Background1.jpeg);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-blend-mode: darken;
+  }
+}
 #container{
   padding-left: 40px;
 }
