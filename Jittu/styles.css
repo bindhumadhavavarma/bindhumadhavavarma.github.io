@@ -1,0 +1,24 @@
+body{
+  background-image: url(Background.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-blend-mode: normal;
+}
+h2{
+  color: aliceblue;
+}
+#heading{
+  font-size: 40px;
+  color: aliceblue;
+  text-align: center;
+  text-decoration: underline;
+  
+}
+
+#container{
+  padding-left: 40px;
+}
+#features{
+  color: aliceblue;
+  font-size:  25px;
+}
