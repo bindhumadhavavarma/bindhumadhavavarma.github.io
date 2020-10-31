@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="Background.jpeg">
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1  style="padding: 20px;font-weight: bold;">Web Weather</h1>
+    </div>
+    <div id="body" style="text-align: left;">
+      <div>
+        <div style="margin-left:30%;margin-right:30%;background-color: rgb(161, 206, 245);padding:40px;border-radius:10px;">
+                <form method="POST">
+                <div class="form-group">
+                
+                <label for="exampleInputEmail1">Username</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username">
+                <small id="emailHelp" class="form-text text-muted">We will never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+          </div> 
+          <button type="submit" class="btn btn-primary" name="login">Login</button>
+          
+          </form></div>';
+      </div> 
+    </div>
+    <div id="features">
+      <h2 style="margin: 5px;text-decoration: underline;">Feedback</h2>
+      <div>
+        <form method="POST">
+          <textarea class="form-control" aria-label="With textarea" style="height: 150px;margin-left: 10%;width: 80%;"></textarea><br>
+        <button type="submit" class="btn btn-primary" name="login">submit</button>
+        </form></div>
+    </div>
+  </div>
+</body>
+</html>
