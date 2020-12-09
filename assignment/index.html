@@ -1,1 +1,527 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <title>Coursify Online Education</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <img src="images/logo.png" alt="" width="160" height="60" class="d-inline-block align-top">  
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          About Coursify
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Young Leaders Scholarships</a></li>
+                          <li><a class="dropdown-item" href="#">Teach with us</a></li>
+                          <li><a class="dropdown-item" href="#">Meet our team</a></li>
+                          <li><a class="dropdown-item" href="#">Our Blog</a></li>
+                          <li><a class="dropdown-item" href="#">FAQ</a></li>
+                        </ul>
+                      </li> 
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Coding</a></li>
+                          <li><a class="dropdown-item" href="#">English</a></li>
+                          <li><a class="dropdown-item" href="#">Coursify for kids</a></li>
+                          <li><a class="dropdown-item" href="#">Maths</a></li>
+                          <li><a class="dropdown-item" href="#">Science</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Video Library</a>
+                      </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Question Bank
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li class="dropdown-submenu dropend">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              NCERT Solutions
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Maths</a></li>
+                              <li><a class="dropdown-item" href="#">Science</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu dropend">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Selina Solutions
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Maths</a></li>
+                              <li><a class="dropdown-item" href="#">Science</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu dropend">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Allied Solutions
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Maths</a></li>
+                              <li><a class="dropdown-item" href="#">Science</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ml-auto"> 
+                    <button type="button" class="btn btn-outline-primary" id="loginbutton">Login\Sign Up</button>
+                    <button type="button" class="btn btn-outline-primary" id="bookingbutton">Book a free class</button>
+                </ul>
+              </div>
+            </div> 
+        </nav>
+        <div class="container-fluid" id="maincontainer">
+        <div class="container-fluid row" id="container1">
+            <div class="col-md-5" style="font-size:45px;font-weight: bolder;" id="text">
+                <h1 style="color: rgb(82, 80, 80);font-weight: bold;">Clarify your <span style="color:rgb(90, 90, 226)">doubts</span> in your language.</h1>
+                <button type="button" class="btn btn-danger" id="doubtbutton">Ask your doubt now</button>
+            </div>
+            <a href="#" class="col-md-7" id="video_placeholder"></a>
+        </div>
+        <div id="heading"><h1 style="color: rgb(82, 80, 80);font-weight: bold;text-align: center;margin-top: 35px;">
+          Incredible results, <span style="color:rgb(90, 90, 226)">guarenteed</span>. </h1>
+        </div>
+        <div class="container-fluid row" id="container2">
+            <div class="col-lg-3 col-md-6" id="outertile">
+                <div id="innertile">
+                    <img src="images/image1.jpg" alt="" height="90px" width="90px">
+                    <span> 40,000+ Doubts cleared</span> 
+                </div>
+                
+            </div>
+            <div class="col-lg-3 col-md-6" id="outertile">
+                <div id="innertile">
+                <img src="images/image2.png" alt="" height="90px" width="105px">
+                <span> 20+ State Boards</span> 
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" id="outertile">
+                <div id="innertile">
+                <img src="images/image3.png" alt="" height="90px" width="90px">
+                <span> 1,000,000+ Lectures</span> 
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" id="outertile">
+                <div id="innertile">
+                <img src="images/image4.jpg" alt="" height="90px" width="90px">
+                <span> 5,000+ Books covered</span> 
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid row" id="container3">
+          <div class="col-md-6" id="text"> 
+            <div style="margin-bottom: 25px;" id="heading">
+              <h1 style="color: rgb(82, 80, 80);font-weight: bold;">Solve your doubts<span style="color:rgb(90, 90, 226)"> faster.</span></h1>
+            </div>
+            <div class="container-fluid row" style="margin-top: 40px;">
+              <div class="col-sm-3 col-xs-3" id="image1"></div>
+              <div class="col-sm-9 col-xs-9">
+                <div><h2 style="color: rgb(82, 80, 80);font-weight: bold;">Accesseble everywhere</h2></div>
+                <div style="color: rgb(82, 80, 80);font-weight: 400;font-size: larger;">Access to quality education anytime, anywhere</div>
+              </div>
+            </div>
+            <div class="container-fluid row" style="margin-top: 40px;">
+              <div class="col-sm-3 col-xs-3" id="image2"></div>
+              <div class="col-sm-9 col-xs-9">
+                <div><h2 style="color: rgb(82, 80, 80);font-weight: bold;">1 million+ videos</h2></div>
+                <div style="color: rgb(82, 80, 80);font-weight: 400;font-size: larger;">Unlimited access to video solutions</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" id="image"></div>
+        </div>
+        <div id="heading"><h1 style="color:rgb(82, 80, 80);font-weight: bold;text-align: center;color:rgb(90, 90, 226);margin-top: 25px;">How it works?</h1></div>
+        <div class="container-fluid row" id="container4">
+          
+          <div class="col-sm-4" id="tile1">
+            <div id="image"></div>
+            <div id="text">Have a doubt?</div> 
+          </div>
+          <div class="col-sm-4" id="tile2">
+            <div id="image"></div>
+            <div id="text">Type your question or Upload an image</div> 
+          </div>
+          <div class="col-sm-4" id="tile3">
+            <div id="image"></div>
+            <div id="text">Get your solution!</div> 
+          </div>
+          <div style="text-align: center;margin-top: 25px;">
+            <button type="button" class="btn btn-danger" id="doubtbutton">Ask your doubt now</button>
+          </div>
+        </div>
+        <div id="heading"><h1 style="color: rgb(82, 80, 80);font-weight: bold;text-align: center;margin-top: 35px;">
+          <span style="color:rgb(90, 90, 226);font-weight: bolder;">LIVE</span> classes </h1>
+        </div>
+        <div class="container-fluid row" id="container5">
+          <a href="#" class="col-md-7" id="video_placeholder"></a>
+          <div class="col-md-5 row" style="margin-top: 40px; padding-left: 25px;">
+            <div class="col-sm-3 col-xs-3" id="image1"></div>
+            <div class="col-sm-9 col-xs-9">
+              <div><h2 style="color: rgb(82, 80, 80);font-weight: bold;">Accesseble everywhere</h2></div>
+              <div style="color: rgb(82, 80, 80);font-weight: 400;font-size: larger;">Access to quality education anytime, anywhere</div>
+            </div>
+         
+            <div class="col-sm-3 col-xs-3" id="image2"></div>
+            <div class="col-sm-9 col-xs-9">
+              <div><h2 style="color: rgb(82, 80, 80);font-weight: bold;">Expert Teachers</h2></div>
+              <div style="color: rgb(82, 80, 80);font-weight: 400;font-size: larger;">Unlimited access to video solutions</div>
+            </div>
+          
+            <div class="col-sm-3 col-xs-3" id="image3"></div>
+            <div class="col-sm-9 col-xs-9">
+              <div><h2 style="color: rgb(82, 80, 80);font-weight: bold;">Interactive Sessions</h2></div>
+              <div style="color: rgb(82, 80, 80);font-weight: 400;font-size: larger;">Small groups for maximum student teacher interaction</div>
+            </div>
+          </div>
+        </div>
+        <div id="heading"><h1 style="color: rgb(82, 80, 80);font-weight: bold;text-align: center;margin-top: 35px;">
+          <span style="color:rgb(90, 90, 226);font-weight: bolder;">First class FREE!</span></h1>
+        </div>
+        <div style="text-align: center;margin-top: 25px;">
+          <button type="button" class="btn btn-danger" id="bookaclass">Book a class now!</button>
+        </div>
+        <div id="heading"><h1 style="color: rgb(82, 80, 80);font-weight: bold;text-align: center;margin-top: 35px;">
+          <span style="color:rgb(90, 90, 226);font-weight: bolder;">JEE</span> Mains &amp; Advanced Preparation </h1>
+        </div>
+
+        <div id="carousel1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carousel1" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carousel1" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carousel1" data-bs-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/image13.webp" class="d-block w-100" alt="...">
+              <div class="carousel-caption" >
+                <h5 style="font-size: 25px;color:rgb(90, 90, 226);background-color: gainsboro;width: fit-content;font-weight: bolder;padding: 5px;">Micro concept videos</h5>
+                <p style="font-size: larger;background-color: gainsboro;width: fit-content;padding: 5px;">Find multilingual video explanations important and frequently confused conceptd from every subject.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/image14.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="font-size: 25px;color:rgb(90, 90, 226);background-color: gainsboro;width: fit-content;padding: 5px;">Interactive sessions</h5>
+                <p style="font-size: larger;background-color: gainsboro;width: fit-content;padding: 5px;">Maximum care is taken to make students understand the concepts and do their best in the examinations.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/image15.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="font-size: 25px;color:rgb(90, 90, 226);background-color: gainsboro;width: fit-content;padding: 5px;">Practice sessions</h5>
+                <p style="font-size: larger;background-color: gainsboro;width: fit-content;padding: 5px;">Solutions for important model questions that are often difficult for the students are discussed.</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carousel1" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel1" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+        <div style="text-align: center;margin-top: 25px;">
+          <button type="button" class="btn btn-danger" id="jee">Prepare for JEE now</button>
+        </div>
+        
+
+
+        <div id="heading"><h1 style="color: rgb(82, 80, 80);font-weight: bold;text-align: center;margin-top: 35px;">
+          <span style="color:rgb(90, 90, 226);font-weight: bolder;">NEET</span> Preparation </h1>
+        </div>
+
+        <div id="carousel2" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carousel2" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carousel2" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carousel2" data-bs-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/image13.webp" class="d-block w-100" alt="...">
+              <div class="carousel-caption" >
+                <h5 style="font-size: 25px;color:rgb(90, 90, 226);background-color: gainsboro;width: fit-content;font-weight: bolder;padding: 5px;">Micro concept videos</h5>
+                <p style="font-size: larger;background-color: gainsboro;width: fit-content;padding: 5px;">Find multilingual video explanations important and frequently confused conceptd from every subject.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/image14.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="font-size: 25px;color:rgb(90, 90, 226);background-color: gainsboro;width: fit-content;padding: 5px;">Interactive sessions</h5>
+                <p style="font-size: larger;background-color: gainsboro;width: fit-content;padding: 5px;">Maximum care is taken to make students understand the concepts and do their best in the examinations.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/image15.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="font-size: 25px;color:rgb(90, 90, 226);background-color: gainsboro;width: fit-content;padding: 5px;">Practice sessions</h5>
+                <p style="font-size: larger;background-color: gainsboro;width: fit-content;padding: 5px;">Solutions for important model questions that are often difficult for the students are discussed.</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carousel2" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel2" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+        <div style="text-align: center;margin-top: 25px;">
+          <button type="button" class="btn btn-danger" id="jee">Prepare for NEET now</button>
+        </div>
+        <div id="heading"><h1 style="color: rgb(82, 80, 80);font-weight: bold;text-align: center;margin-top: 35px;">
+          <span style="color:rgb(90, 90, 226);font-weight: bolder;">Explore the subjects with us!</span></h1>
+        </div>
+        <div class="container-fluid row" id="container6">
+          <a class="col mx-1" id="tile" href="#">
+            <div>
+              <img src="images/image16.png" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;object-position: center;">Maths</div>
+            </div> 
+          </a>
+          <a class="col mx-1" id="tile" href="#">
+            <div>
+              <img src="images/image17.jpeg" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;">Physics</div>
+            </div> 
+          </a>
+          <a class="col mx-1" id="tile" href="#">
+            <div>
+              <img src="images/image19.jpg" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;">Chemistry</div>
+            </div> 
+          </a>
+          <a class="col mx-1" id="tile" href="#">
+            <div>
+              <img src="images/image18.png" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;">Biology</div>
+            </div> 
+          </a>
+        </div>
+
+        <div id="heading"><h1 style="color: rgb(82, 80, 80);font-weight: bold;text-align: center;margin-top: 35px;">
+          <span style="color:rgb(90, 90, 226);font-weight: bold;">Free access</span> to 5000+ books</h1>
+        </div>
+        <div class="container-fluid row px-5 py-5" id="container7">
+          <a class="col mx-2" id="tile" href="#">
+            <div>
+              <img src="images/book1.png" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;object-position: center;">HC Verma</div>
+            </div> 
+          </a>
+          <a class="col mx-2" id="tile" href="#">
+            <div>
+              <img src="images/book2.png" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;">NCERT</div>
+            </div> 
+          </a>
+          <a class="col mx-2" id="tile" href="#">
+            <div>
+              <img src="images/book3.png" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;">KC Sinha</div>
+            </div> 
+          </a>
+          <a class="col mx-2" id="tile" href="#">
+            <div>
+              <img src="images/book4.png" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;">Errorless</div>
+            </div> 
+          </a>
+          <a class="col mx-2" id="tile" href="#">
+            <div>
+              <img src="images/book5.png" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;">Tata McGraw Hill</div>
+            </div> 
+          </a>
+          <a class="col mx-2" id="tile" href="#">
+            <div>
+              <img src="images/book6.png" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;object-position: center;">RD Sharma</div>
+            </div> 
+          </a>
+          <a class="col mx-2" id="tile" href="#">
+            <div>
+              <img src="images/book7.png" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;">Pradeep's</div>
+            </div> 
+          </a>
+          <a class="col mx-2" id="tile" href="#">
+            <div>
+              <img src="images/book8.jpg" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;">SL Arora</div>
+            </div> 
+          </a>
+          <a class="col mx-2" id="tile" href="#">
+            <div>
+              <img src="images/book9.jpg" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;">Maths</div>
+            </div> 
+          </a>
+          <a class="col mx-2" id="tile" href="#">
+            <div>
+              <img src="images/book10.png" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;">Biology</div>
+            </div> 
+          </a>
+        </div>
+
+
+        <div id="heading"><h1 style="color: rgb(82, 80, 80);font-weight: bold;text-align: center;margin-top: 35px;">
+          <span style="color:rgb(90, 90, 226);font-weight: bolder;">State Boards</span></h1>
+        </div>
+        <div class="container-fluid row px-5 py-5" id="container7" style="background-image: url(images/background7.jpg);">
+          <a class="col mx-2" id="tile" href="#">
+            <div>
+              <img src="images/board.jpg" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;object-position: center;">Maharashtra</div>
+            </div> 
+          </a>
+          <a class="col mx-2" id="tile" href="#">
+            <div>
+              <img src="images/board2.jpg" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;">Punjab</div>
+            </div> 
+          </a>
+          <a class="col mx-2" id="tile" href="#">
+            <div>
+              <img src="images/board3.jpg" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;">Andhra Pradesh</div>
+            </div> 
+          </a>
+          <a class="col mx-2" id="tile" href="#">
+            <div>
+              <img src="images/board4.png" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;">West Bengal</div>
+            </div> 
+          </a>
+          <a class="col mx-2" id="tile" href="#">
+            <div>
+              <img src="images/board5.png" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;">Uttar Pradesh</div>
+            </div> 
+          </a>
+          <a class="col mx-2" id="tile" href="#">
+            <div>
+              <img src="images/board6.png" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;object-position: center;">Kerala</div>
+            </div> 
+          </a>
+          <a class="col mx-2" id="tile" href="#">
+            <div>
+              <img src="images/board7.jpg" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;">Rajasthan</div>
+            </div> 
+          </a>
+          <a class="col mx-2" id="tile" href="#">
+            <div>
+              <img src="images/board8.png" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;">Gujarat</div>
+            </div> 
+          </a>
+          <a class="col mx-2" id="tile" href="#">
+            <div>
+              <img src="images/board9.png" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;">Tamil Nadu</div>
+            </div> 
+          </a>
+          <a class="col mx-2" id="tile" href="#">
+            <div>
+              <img src="images/board10.jpg" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-weight: bold;font-size: larger;">Madhya Pradesh</div>
+            </div> 
+          </a>
+        </div>
+        <div id="heading"><h1 style="color: rgb(82, 80, 80);font-weight: bold;text-align: center;margin-top: 35px;">
+          Meet our expert tutors</h1>
+        </div>
+        <div class="container-fluid row" id="container6" style="background-image: url(images/background8.jpg);">
+          <div class="col mx-1" id="tile" href="#">
+            <div>
+              <img src="images/user1.jpg" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-size: larger;object-position: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, ea nulla totam quidem provident aut ad qu</div>
+            </div> 
+          </div>
+          <div class="col mx-1" id="tile" href="#">
+            <div>
+              <img src="images/user2.jpg" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-size: larger;object-position: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, ea nulla totam quidem provident aut ad qu</div>
+            </div> 
+          </div>
+          <div class="col mx-1" id="tile" href="#">
+            <div>
+              <img src="images/user2.jpg" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-size: larger;object-position: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, ea nulla totam quidem provident aut ad qu</div>
+            </div> 
+          </div>
+          <div class="col mx-1" id="tile" href="#">
+            <div>
+              <img src="images/user1.jpg" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-size: larger;object-position: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, ea nulla totam quidem provident aut ad qu</div>
+            </div> 
+          </div>
+          
+        </div>
+        <div id="heading"><h1 style="color: rgb(82, 80, 80);font-weight: bold;text-align: center;margin-top: 35px;">
+          See what our students have to say</h1>
+        </div>
+        <div class="container-fluid row" id="container6" style="background-image: url(images/background7.jpg);">
+          <div class="col mx-1" id="tile" href="#">
+            <div>
+              <img src="images/user1.jpg" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-size: larger;object-position: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, ea nulla totam quidem provident aut ad qu</div>
+            </div> 
+          </div>
+          <div class="col mx-1" id="tile" href="#">
+            <div>
+              <img src="images/user2.jpg" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-size: larger;object-position: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, ea nulla totam quidem provident aut ad qu</div>
+            </div> 
+          </div>
+          <div class="col mx-1" id="tile" href="#">
+            <div>
+              <img src="images/user2.jpg" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-size: larger;object-position: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, ea nulla totam quidem provident aut ad qu</div>
+            </div> 
+          </div>
+          <div class="col mx-1" id="tile" href="#">
+            <div>
+              <img src="images/user1.jpg" height="100px" width="100px" alt="" style="object-position: center;">
+              <div id="text" style="font-size: larger;object-position: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, ea nulla totam quidem provident aut ad qu</div>
+            </div> 
+          </div>
+          
+        </div>
+        <div style="text-align: center;margin-top: 25px;margin-bottom: 25px;">
+          <button type="button" class="btn btn-danger" id="jee">Download the app for free</button>
+        </div>
+        </div>
+        <script src="jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
 
