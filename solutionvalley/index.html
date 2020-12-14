@@ -38,7 +38,7 @@
         <div id="vertical"><i class="arrow left"></i> SCROLL DOWN </div>
         <div class="content row" style="text-align: left;">
             <div style="color: tomato;">WHAT WE DO</div>
-            <h1 style="font-weight: 200;">WE ACCELERATE CHANGE - CREATING MARKET DISRUPTION THROUGH PRODUCTS, SERVICES AND SOLUTIONS
+            <h1 id="heading" style="font-weight: 200;">WE ACCELERATE CHANGE - CREATING MARKET DISRUPTION THROUGH PRODUCTS, SERVICES AND SOLUTIONS
             </h1>
             <div class="col-md-4 row">
                 <div class="col-md-2"><img src="image1.png" height="50px" width="50px" alt=""></div>
@@ -57,31 +57,109 @@
     
     <section class="container" id="description">
         <div class="content">
-            <h1>Step 1</h1>
-            <p>Start it like this..</p>
+            <h1 id="heading" style="font-weight: 200;">From the user experience to A.I and data, we are front-to-back.</h1>
         </div>
     </section>
     
     <section class="container" id="description">
         <div class="content">
-            <h1>Step 2</h1>
-            <p>Start it like this..</p>
+            <h1 id="heading" style="font-weight: 200;">It's not about you. We design for your users, whilst adding value to your business.</h1>
         </div>
     </section>
     
     <section class="container" id="description">
         <div class="content">
-            <h1>Step 3</h1>
-            <p>Start it like this..</p>
+            <script>
+                $(document).ready(function(){
+                    $("#myCarousel").carousel({
+                        interval : false
+                    });
+                });
+            </script>
+                
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="false" data-bs-interval="false">
+                <ol class="carousel-indicators">
+                  <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+                  <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+                  <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="false">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>6point6 – Cyber Resilience</h2>
+                      <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Read more
+                      </a>
+                    
+                      
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="false">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>Open Borders Direct</h2>
+                      <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Read more
+                      </a>
+                    
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>6point6 – 360</h2>
+                      <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse3"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Read more
+                      </a>
+                    
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
+              </div>
+              <div class="collapse" id="collapse1">
+                <div class="card card-body" style="background-color: tomato;border: solid 2px black;">
+                    <h1>PROJECT:
+                        6POINT6 – CYBER RESILIENCE
+                    </h1>
+                    <h2>OVERVIEW</h2>
+                    <p>Bottling up the expertise within the 6point6 cyber team we have created a self assessment cyber resilience tool.
+                         This enables businesses to evaluate and gain meaningful insights and actions that they can take to improve their resilience to cyber events.
+                         Bullet have been behind the brand, positioning, strategy and product design and build.</p>
+                </div>
+              </div>
+              <div class="collapse" id="collapse2">
+                <div class="card card-body" style="background-color: tomato;border: solid 2px black;">
+                    <h1>PROJECT:
+                        OPEN BORDERS DIRECT                        
+                    </h1>
+                    <h2>OVERVIEW</h2>
+                    <p>UK businesses trade over £800bn worth of goods each year, yet many do not have access to key information and products
+                         necessary to enable international trade with ease, speed and safety. We carried out an in-depth digital discovery,
+                          the results of which were validated with user research with UK businesses. Using this insight
+                        , we created the vision for a new, innovative digital service solving the challenges faced by businesses when trading internationally.</p>
+                </div>
+              </div>
+              <div class="collapse" id="collapse3">
+                <div class="card card-body" style="background-color: tomato;border: solid 2px black;">
+                    <h1>PROJECT:
+                        6POINT6 – 360
+                    </h1>
+                    <h2>OVERVIEW</h2>
+                    <p>Utilising graph technology, Client 360 is a data intelligence product that provides wealth & asset managers insights into their clients’
+                         relationships, proximity to hot topics and mapping live sales opportunities.
+                         Bullet have been responsible for all aspects of the brand, creation of the proposition, strategy, product design and build.</p>
+                </div>
+              </div>
         </div>
     </section>
     
-    <section class="container" id="description">
-        <div class="content">
-            <h1>Step 4</h1>
-            <p>Start it like this..</p>
-        </div>
-    </section>
+    
     <div id="set-height"></div>
     <div id="video">
         <video id="v0" tabindex="0", autobuffer preload>
@@ -101,7 +179,7 @@
     
         var frameNumber = 0, // start video at frame 0
         // lower numbers = faster playback
-        playbackConst = 400, 
+        playbackConst = 300, 
         // get page height from video duration
         setHeight = document.getElementById("set-height"), 
         // select video element         
@@ -123,12 +201,65 @@
     window.requestAnimationFrame(scrollPlay);
     
     </script>
+    
+</div>
+<div class="container-fluid" style="background-color: black;position: sticky;min-height: 550px;padding: 0;">
+<div style="text-align: right;"><img src="image5.svg" alt=""></div>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" data-bs-interval="false" style="width: 75%;">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" style="overflow: visible;margin-top: 15%;">
+      <div class="carousel-item active" style="margin-top: 50px;">
+        <div class="carousel-caption d-none d-md-block" style="text-align: left;">
+         <h3 style="color:tomato;">VISION ACCELERATION</h3>
+         <h1 style="font-weight: 300;"> 'Bullet helped us accelerate and develop our vision – transforming our early stage application into what is quickly becoming a market leading product 
+            CYNAN RHODES'</h1>
+         <h3 style="color: tomato;">CYNAN RHODES</h3>
+         <h3>SIX WEALTH
+            FOUNDER
+        </h3>
+        </div>
+      </div>
+      <div class="carousel-item" style="margin-top: 50px;">
+        <div class="carousel-caption d-none d-md-block"style="text-align: left;">
+            <h3 style="color:tomato;">VISION ACCELERATION</h3>
+            <h1 style="font-weight: 300;"> 'Bullet helped us accelerate and develop our vision – transforming our early stage application into what is quickly becoming a market leading product 
+               CYNAN RHODES'</h1>
+            <h3 style="color: tomato;">CYNAN RHODES</h3>
+            <h3>SIX WEALTH
+               FOUNDER
+           </h3>
+        </div>
+      </div>
+      <div class="carousel-item" style="margin-top: 50px;">
+        <div class="carousel-caption d-none d-md-block"style="text-align: left;">
+            <h3 style="color:tomato;">VISION ACCELERATION</h3>
+            <h1 style="font-weight: 300;"> 'Bullet helped us accelerate and develop our vision – transforming our early stage application into what is quickly becoming a market leading product 
+               CYNAN RHODES'</h1>
+            <h3 style="color: tomato;">CYNAN RHODES</h3>
+            <h3>SIX WEALTH
+               FOUNDER
+           </h3>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+  <div class="container-fluid" style="background-color: tomato;padding-top: 40px;padding-bottom: 40px;text-align: center;">
+    <a href="#" style="text-decoration: none;color: black;"><h3 style="font-weight: 500;">SEE HOW WE DO THIS</h3></a>
+</div>
+<div class="footer">
+    <img src="bullet.svg" alt="" height="25px" style="margin-bottom: 8px;">
+    <h4 style="color:white;">130 Jermyn Street, St. James's, London SW1Y 4UR</h4>
+    <h5 style="color: white;">&copy; BULLET, a 6POINT6 company. Bullet is a trademark of 6point6 Limited</h5>
+</div>
 </div>
 
-
-
-
-
-</div>
 </body>
 </html>
