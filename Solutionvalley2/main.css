@@ -1,0 +1,265 @@
+#myVideo {
+    height: 80%;
+    width: 100%;
+  }
+  #video_container{
+      position: absolute;
+      
+  }
+  #maincontainer{
+      padding: 0;
+      overflow: hidden;
+  }
+  .logo{
+    position: relative;
+    margin: 0 auto;
+    top: 0;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: fit-content;
+    padding: 20px;    
+    padding-top: 35px;
+  }
+  #content1{
+      position: relative;
+      margin:0 auto;
+      color: white;
+      width: fit-content;
+      top: 150px;
+      text-align: center;
+  }
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    background-image: url("media/paly.png");
+    background-position: center;
+    background-size: 60px 60px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: rgb(148, 146, 146);
+    background-image: url("media/paly.png");
+    background-position: center;
+    background-size: 60px 60px;
+  }
+  #myBtn1 {
+    background-image: url("media/unmute.png");
+    background-position: center;
+    background-size: 25px 25px;
+    background-color: black;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+  }
+  
+  #myBtn1:hover {
+    background: rgb(148, 146, 146);
+    background-image: url("media/unmute.png");
+    background-position: center;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+  }
+  a.middle
+  {
+      position: relative;
+      color: white;
+      text-decoration: none;
+  }
+  
+  a.middle:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  a.middle:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  a.middleblack
+  {
+      position: relative;
+      color: black;
+      text-decoration: none;
+  }
+  
+  a.middleblack:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:black;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  a.middleblack:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  #content2{
+      position: absolute;
+      bottom: 0;
+      padding:30px;
+     background-color: unset;
+  }
+  #menu{
+    position:fixed;
+    color: white;
+    text-decoration: none;
+    bottom: 0;
+    left: 48%;
+    margin: 0 auto;
+    background-image:url("media/nav-button.png");
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  #maincontainer2{
+    display: block;
+    margin-top: 505px;
+    overflow: hidden;
+  }
+  .floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+.hideme
+{
+    opacity:0;
+}
+#maincontainer3{
+  display: block;
+  height: 900px;
+  background-image: url("media/theextrao_collection_homepage_front.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+#maincontainer4{
+  display: block;
+  height: 900px;
+  background-image: url("media/rendezvous-tokyo-blue-haiku.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.collapse:hover{display: block;}
+a {
+  text-decoration: none;
+}
+
+nav {
+	font-family: monospace;
+}
+
+ul {
+  background: white;
+	list-style: none;
+  margin: 0;
+  border-radius: 40px;
+	padding-left: 0;
+}
+
+li {
+  border-radius: 40px;
+	color:  black;
+  background: tomato;
+	display: block;
+	float: left;
+	padding: 1rem;
+	position: relative;
+	text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+li a {
+  color: black;
+}
+
+li:hover {
+	cursor: pointer;
+}
+
+ul li ul {
+	background: white;
+	visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+	position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+	left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+	clear: both;
+  width: 100%;
+}
+#maincontainer5{
+  overflow: hidden;
+  display: block;
+}
+#maincontainer6{
+  overflow: hidden;
+  display: block;
+  background-color: blanchedalmond;
+}
+#maincontainer7{
+  overflow: hidden;
+  display: block;
+  background-color: black;
+}
+#maincontainer8{
+  overflow: hidden;
+  display: block;
+  background-color: black;
+  padding: 25px;
+  padding-bottom: 250px;
+}
+#maincontainer9{
+  background-color: black;
+  width: 100%;
+  text-align: right;
+  padding:10px;
+}
+#maincontainer9>a{
+  margin-left: 8px;
+}
