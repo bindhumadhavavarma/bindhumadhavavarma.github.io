@@ -1,0 +1,166 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+  background-color: #3B5998;
+}
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+@media (min-width:992px){
+.navbar{
+    padding-left: 110px;
+    padding-right: 110px;
+}}
+.dropdown-submenu {
+    position: relative;
+  }
+  
+  .abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+  .dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  @media (min-width:992px){
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+    margin-top: 0px;
+  }
+ 
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+  
+  .dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-submenu>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }}
+  
+  
+  
+  .navbar{
+    padding-bottom: 0px;
+   
+  }
+ #logo{
+     border-radius: 50px;
+ }
+ /* Style all font awesome icons */
+ .fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  color: white;
+  margin-left: 5px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background-image: url(images/insta_background.jpg);
+  background-position: center;
+  color: white;
+}
+#container1{
+  margin: 0;
+  background-position: center;
+  padding: 30px;
+}
+#tile{text-decoration: none;margin-bottom: 25px;}
+#tile>div{
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  width: fit-content;
+  padding: 15px;
+  margin: 0 auto;
+  box-shadow: 0 0 5px  rgb(155, 155, 238);
+}
+#tile>div>#text{
+      width: fit-content;
+      margin: 0 auto;
+      padding: 3px;
+}
+.floating:hover {  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 5px); }
+  to   { transform: translate(0, -0px); }    
+}
+.responsivecard
+{
+    
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+
+}
+.responsivecard:hover
+{
+    box-shadow: 0px 0px 150px rgb(7, 7, 12);
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.2);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 200ms ease-in;
+    transform: scale(1.2);
+}
+#container2{
+  height: 500px;
+  background-color: rgb(231, 102, 56);
+}
+#container0{padding-top: 65px;}
