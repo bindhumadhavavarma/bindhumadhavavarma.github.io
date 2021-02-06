@@ -69,6 +69,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     color: #7f88a6;
     padding: 27px 0px;
 }
+.f_list{padding: 0;}
 .f_list li a{
     color: black;
 }
