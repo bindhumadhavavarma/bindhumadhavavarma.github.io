@@ -69,10 +69,10 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     color: #7f88a6;
     padding: 27px 0px;
 }
-.new_footer_top .f_widget.about-widget .f_list li a{
+.f_list li a{
     color: black;
 }
-.new_footer_top .f_widget.about-widget .f_list li a:hover {
+.f_list li a:hover {
     color: #5e2ced;
 }
 .btn {
@@ -124,3 +124,4 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     65%  { transform: translate(0, 20px); }
     to   { transform: translate(0, -0px); }    
 }
+
