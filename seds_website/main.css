@@ -359,3 +359,48 @@ background-size:100%;
     transition: all 200ms ease-in;
     transform: scale(1.1);
 }
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.viewport-header {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#Main_logo {
+  height: 300px;
+}
+
+#Main_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#SEDS_Name {
+  display: block;
+  font-family: Orbitron;
+  color: ghostwhite;
+  font-weight: bold;
+  font-size: 80px;
+  margin-bottom: 5px
+}
+
+#Seds_fullform {
+  font-family: Orbitron;
+  color: ghostwhite;
+  font-size: 30px;
+  margin-top: 15px;
+  background: #12121222;
+}
