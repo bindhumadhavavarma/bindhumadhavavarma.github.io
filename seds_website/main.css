@@ -237,6 +237,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .new_footer_top .footer_bg {
+    background: none;
+    background-color: white;
     position: absolute;
     bottom: 0;
     width: 100%;
