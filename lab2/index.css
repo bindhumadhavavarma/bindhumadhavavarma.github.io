@@ -132,3 +132,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     font-size: 70px;
     text-shadow: 3px 3px 0px #d2d2d2;
 }
+@media(min-width:650px){
+#content{
+    padding: 3% 15% 3% 15%;
+}}
