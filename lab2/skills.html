@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <meta name="viewport" content="width=device-width,  initial-scale=0.7">
+      <meta name="viewport" content="width=device-width, initial-scale=0.7">
         <script src="jquery-1.11.3.min.js"></script>
         <script src="bootstrap.min.js"></script>
         <link rel="icon" href="images/me.jpg">
@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="bootstrap.min.css">
         <link rel="stylesheet" href="index.css">
     </head>
-    <body >
+    <body>
         <div class="container-fluid" id="container0">
             <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
               <div class="d-flex w-50 order-0">
@@ -27,17 +27,17 @@
                   <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                   </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Education</a>
-                  </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="internships.html">Internships</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="trainings.html">Trainings</a>
+                    <a class="nav-link" href="education.html">Education</a>
                   </li>
                   <li class="nav-item ">
-                    <a class="nav-link" href="skills.html">Skills</a>
+                    <a class="nav-link" href="internships.html">Internships</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="trainings.html">Trainings</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Skills</a>
                   </li>
                 </ul>
               </div>
@@ -51,38 +51,101 @@
             </nav>
           </div>
           <div class="contanier-fluid" id="container1" style="padding-top: 75px;min-height: 66vh;">
-            <div class="heading">Education Details</div>
-            <div style="padding: 3% 15% 3% 15%;">
-                <table class="table" style="color: white;text-align: left;"> 
-                    <thead>
-                      <tr>
-                        <th scope="col">Course</th>
-                        <th scope="col">Institute</th>
-                        <th scope="col">Year of completion</th>
-                        <th scope="col">CGPA</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">B.Tech (Hons.), Computer Science</th>
-                        <td>Vellore Institute Of Technology Amaravati AP</td>
-                        <td>2019 - 2023</td>
-                        <td>9.26</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Senior Secondary (XII), Science</th>
-                        <td>Sri Chaitanya Educational Institutions</td>
-                        <td>2019</td>
-                        <td>9.75</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Secondary (X)</th>
-                        <td>Jcr Chaitanya English Medium High School</td>
-                        <td>2017</td>
-                        <td>10.00</td>
-                      </tr>
-                    </tbody>
-                  </table>
+            <div class="heading">My Skills</div>
+            <div id="content" style="padding-top: 0;">
+                <div class="container-fluid row" id="skills_tile">
+                    <div class="col-md-4 col-sm-6 col-xs-12" id="tile" href="#">
+                      <div class="responsivecard">
+                        <img src="images/c.webp" height="80px" width="80px" alt="">
+                        <div id="text">
+                        <span>C Programming (intermediate)</span>
+                        </div>
+                      </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12" id="tile" href="#">
+                        <div class="responsivecard">
+                          <img src="images/java.jpg" height="80px" width="110px" alt="">
+                          <div id="text">
+                          <span>Java (intermediate)</span>
+                          </div>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12" id="tile" href="#">
+                        <div class="responsivecard">
+                          <img src="images/python.png" height="80px" width="80px" alt="">
+                          <div id="text">
+                          <span>Python (intermediate)</span>
+                          </div>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12" id="tile" href="#">
+                        <div class="responsivecard">
+                          <img src="images/r.svg" height="80px" width="80px" alt="">
+                          <div id="text">
+                          <span>R Programming (intermediate)</span>
+                          </div>
+                        </div> 
+                      </div>
+                      <div class="col-md-4 col-sm-6 col-xs-12" id="tile" href="#">
+                          <div class="responsivecard">
+                            <img src="images/html.png" height="80px" width="80px" alt="">
+                            <div id="text">
+                            <span>HTML (intermediate)</span>
+                            </div>
+                          </div> 
+                      </div>
+                      <div class="col-md-4 col-sm-6 col-xs-12" id="tile" href="#">
+                          <div class="responsivecard">
+                            <img src="images/css.png" height="80px" width="60px" alt="">
+                            <div id="text">
+                            <span>CSS (intermediate)</span>
+                            </div>
+                          </div> 
+                      </div>
+                      <div class="col-md-4 col-sm-6 col-xs-12" id="tile" href="#">
+                        <div class="responsivecard">
+                          <img src="images/javascript.png" height="80px" width="130px" alt="">
+                          <div id="text">
+                          <span>JavaScript (intermediate)</span>
+                          </div>
+                        </div> 
+                      </div>
+                      <div class="col-md-4 col-sm-6 col-xs-12" id="tile" href="#">
+                          <div class="responsivecard">
+                            <img src="images/json.png" height="80px" width="80px" alt="">
+                            <div id="text">
+                            <span>JSON (intermediate)</span>
+                            </div>
+                          </div> 
+                      </div>
+                      <div class="col-md-4 col-sm-6 col-xs-12" id="tile" href="#">
+                          <div class="responsivecard">
+                            <img src="images/ajax.png" height="80px" width="110px" alt="">
+                            <div id="text">
+                            <span>AJAX (intermediate)</span>
+                            </div>
+                          </div> 
+                      </div>
+                      <div class="col-md-4 col-sm-6 col-xs-12" id="tile" href="#">
+                        <div class="responsivecard">
+                          <img src="images/jquery.png" height="80px" width="80px" alt="">
+                          <div id="text">
+                          <span>Jquery (intermediate)</span>
+                          </div>
+                        </div> 
+                      </div>
+                      <div class="col-md-4 col-sm-6 col-xs-12" id="tile" href="#">
+                          <div class="responsivecard">
+                            <img src="images/react.png" height="80px" width="110px" alt="">
+                            <div id="text">
+                            <span>React (beginner)</span>
+                            </div>
+                          </div> 
+                      </div>
+                      
+                    
+                    
+                </div>
             </div>
             
           </div>
