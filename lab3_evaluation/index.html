@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab3</title>
+        <link rel="stylesheet" href="main.css">
+        
+    </head>
+    <body>
+        <div class="links">
+            <div style="margin: 40vh 0 0 3vw;"><a href="#" class="btn" onclick="return(showpara())">HTML Paragraph tag</a></div>
+            <div style="margin: 35px 0 0 3vw;"><a href="#" class="btn" onclick="return(showlist())">HTML unordered list</a></div>
+        </div>
+        <div id="frames"><h1>Click on a link to display here.</h1></div>
+        <script>
+            function showpara(){
+                document.getElementById("frames").innerHTML="<iframe src='paragraph.html' ></iframe>";
+            }
+            function showlist(){
+                document.getElementById("frames").innerHTML="<iframe src='list.html' ></iframe>";
+            }
+        </script>
+    </body>
+</html>
