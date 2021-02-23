@@ -14,7 +14,14 @@
     font-size: 18px;
     font-weight: 600;
 }
-body{width: 100vw;overflow-x: hidden;}
+html,body
+{
+    width: 100%;
+    
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
 .fa {
     margin-top: 4px;
@@ -658,6 +665,11 @@ section {
 }
 .tl-item:hover {
   width: 30% !important;
+}
+@media(max-width:540px){
+  .tl-item:hover {
+    width: 90% !important;
+  }
 }
 .tl-item:hover:after {
   opacity: 0;
