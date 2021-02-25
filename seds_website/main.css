@@ -627,6 +627,7 @@ section {
   display: flex;
   background-color: #031625;
   height: 88vh;
+  overflow-y: hidden;
 }
 #timeline:hover .tl-item {
   width: 23.3333%;
@@ -937,11 +938,8 @@ h1:after {
 @import url('https://fonts.googleapis.com/css?family=Barlow');
 
 #Team_HEAD {
-  background: #2B272C url(images/sun2.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: rgba(0, 0, 0, 0.205);
+ 
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -1334,7 +1332,7 @@ p.demos {
 }
 .gallery{
   padding: 3vw;
-  background-color: black;
+  background:rgba(0, 0, 0, 0.5);
   position: relative;
 }
 .modal-content{border-radius: 30px;}

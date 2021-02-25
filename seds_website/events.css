@@ -18,19 +18,7 @@ body {
     min-width: 300px;
     max-width: 700px;
   }
-  .content > h1 {
-    text-align: center;
-    color: #f02c54;
-    font-size: 5rem;
-    font-size: 6.5vw;
-    text-shadow: 3px 3px 0px #d2d2d2;
-  }
-  @media (max-width: 768px) {
-    .content > h1 {
-      font-size: 3rem;
-    }
-  }
- 
+  
   .timeline {
     padding: 50px 0;
   }

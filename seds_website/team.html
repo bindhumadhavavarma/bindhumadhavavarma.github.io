@@ -11,12 +11,21 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
-    
+    <style>button, input[type="submit"], input[type="reset"] {
+        background: none;
+        width: 100%;
+        color: inherit;
+        border: inherit;
+        padding: inherit;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+    }</style>
 
 </head>
 
-<body>
-    <video src="images/backvideo.mp4" autoplay loop playsinline muted ></video>
+<body >
+    <video src="images/backvideo.mp4" autoplay loop playsinline muted preload></video>
     <div class="container-fluid" id="home">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" style="padding-top: 0;padding-bottom: 0;">
           <div class="d-flex w-50 order-0">
@@ -85,567 +94,48 @@
             </div>
         </div>
     </section>
+    <script>
+        function core(){
+            document.getElementById("placeholder").innerHTML='<iframe id="idIframe" onload="iframeLoaded()"  src="coreteam.html" height="100%" width="100%" style="border:none"></iframe>';
+        }
+        function project(){
+            document.getElementById("placeholder").innerHTML='<iframe id="idIframe" onload="iframeLoaded()"  src="projectteam.html" height="100%" width="100%" style="border:none"></iframe>';
+        }
+        function outreach(){
+            document.getElementById("placeholder").innerHTML='<iframe id="idIframe" onload="iframeLoaded()"  src="outteam.html" height="100%" width="100%" style="border:none"></iframe>';
+        }
+    </script>
+    <div class="row" style="margin: 0;">
+        <div class="col-md-4 col-sm-6" id="teamlink"><button onclick="return(core())"><div id="corescroll" class="twelve Subheadingdiv">
+            <h1>Core Team</h1>
+        </div></button></div>
+        <div class="col-md-4 col-sm-6" id="teamlink"><button onclick="return(project())"><div id="corescroll" class="twelve Subheadingdiv">
+            <h1>Project Team</h1>
+        </div></button></div>
+        <div class="col-md-4 col-sm-12" id="teamlink"> <button onclick="return(outreach())"><div id="corescroll" class="twelve Subheadingdiv">
+           <h1>Outreach Team</h1>
+        </div></button></div>
+      </div>
 
-     <!-- <div id="headdiv" style="height:100%; width: 100%;">
-        <div>
-            <center>
-                <h1 style="color:white;">MEET OUR</h1>
-                <p>
-                    <a href="#corescroll">CORE TEAM</a> &nbsp;&nbsp;&nbsp;
-                    <a href="#projectscroll">PROJECTS TEAM</a>&nbsp;&nbsp;&nbsp;
-                    <a href="#outreachscroll">OUTREACH TEAM</a>
-                <p>
-                    <center>
-        </div>
-    </div> -->
     
-
-
-    <!-- ----------------------------------------------------------------------- -->
-    <!-- ----------------------------------------------------------------------- -->
-    <!-- Core Team -->
-    <!-- ----------------------------------------------------------------------- -->
-    <!-- ----------------------------------------------------------------------- -->
     <div id="coreanchor"></div>
-    <div id="corescroll" class="twelve Subheadingdiv">
-        <h1>Core Team</h1>
-    </div>
-
-    <div class="row justify-content-center" style="padding-left: 7vw;padding-right: 7vw;">
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Michele Miller</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=839">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Patricia Knott</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=856">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Justin Ramos</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Mary Huntley</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Michele Miller</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=839">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Patricia Knott</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=856">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Justin Ramos</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Mary Huntley</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Mary Huntley</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <script type="text/javascript">
+        function iframeLoaded() {
+            var iFrameID = document.getElementById('idIframe');
+            if(iFrameID) {
+                  // here you can make the height, I delete it first, then I make it again
+                  iFrameID.height = "";
+                  iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+            }   
+        }
+      </script> 
+      <div id="placeholder" style="z-index: 1;position: relative;min-height: 800px;">
+        
 
 
-
-    <!-- ----------------------------------------------------------------------- -->
-    <!-- ----------------------------------------------------------------------- -->
-    <!-- Projects Team -->
-    <!-- ----------------------------------------------------------------------- -->
-    <!-- ----------------------------------------------------------------------- -->
-    <div id="projectanchor"></div>
-    <div id="projectscroll" class="twelve Subheadingdiv" >
-        <h1>Projects Team</h1>
-    </div>
-
-    <div class="row justify-content-center" style="padding-left: 7vw;padding-right: 7vw;">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Michele Miller</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Michele Miller</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Michele Miller</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=839">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Patricia Knott</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=856">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Justin Ramos</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Mary Huntley</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Michele Miller</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=839">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Patricia Knott</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=856">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Justin Ramos</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Mary Huntley</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Mary Huntley</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-
-
-
-    <!-- ----------------------------------------------------------------------- -->
-    <!-- ----------------------------------------------------------------------- -->
-    <!-- Outreach Team -->
-    <!-- ----------------------------------------------------------------------- -->
-    <!-- ----------------------------------------------------------------------- -->
-    <div id="outreachanchor"></div>
-    <div id="outreachscroll" class="twelve Subheadingdiv">
-        <h1>Outreach Team</h1>
-    </div>
- 
-    <div class="row justify-content-center" style="padding-left: 7vw;padding-right: 7vw;">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=839">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Patricia Knott</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=856">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Justin Ramos</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Mary Huntley</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Michele Miller</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=839">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Patricia Knott</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=856">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Justin Ramos</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Mary Huntley</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
-                </div>
-                <div class="team-content">
-                    <h3 class="name">Mary Huntley</h3>
-                    <h4 class="title">Web Developer</h4>
-                </div>
-                <ul class="social">
-                  <a href="#" class="responsivecard fa fa-facebook" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-twitter" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-linkedin" style="color: white;"></a>
-                  <a href="#" class="responsivecard fa fa-instagram" style="color: white;"></a>
-                </ul>
-            </div>
-        </div>
-    </div>
+<iframe id="idIframe" onload="iframeLoaded()"  src="coreteam.html" height="100%" width="100%" style="border:none"></iframe>
+        <!--<iframe class="myIframe" style="width: 100vw;border: none;" src="coreteam.html"></iframe>-->
+      </div>
 
 
     <div class="new_footer_top" style="background-color: white;">
@@ -673,7 +163,7 @@
   </div>
     
 
-    
+  
 </body>
 
 </html>
