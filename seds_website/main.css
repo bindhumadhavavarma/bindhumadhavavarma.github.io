@@ -1320,3 +1320,25 @@ p.demos {
   background-color: #b4b4b852;
   
 }
+.heading > h1 {
+  text-align: center;
+  color: red;
+  font-size: 3rem;
+  font-size: 4.5vw;
+  text-shadow: 3px 3px 0px #d2d2d2;
+}
+@media (max-width: 768px) {
+  .heading > h1 {
+    font-size: 3rem;
+  }
+}
+.gallery{
+  padding: 3vw;
+  background-color: black;
+  position: relative;
+}
+.modal-content{border-radius: 30px;}
+.modal-content .container{
+  padding: 25px;
+}
+#Modal_description{padding:25px;}
