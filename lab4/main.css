@@ -23,6 +23,7 @@ button {
 #image_container{
     padding-left: 8vw;
     padding-right: 8vw;
+    text-align: center;
 }
 img{
     height: 200px;
