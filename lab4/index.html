@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lab4</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body onload="return(initialize())">
+        <script>
+            var picsarray=new Array(27);
+            function initialize(){
+                for (let i = 0; i < 27; i++) {
+                    picsarray[i]=new Image();
+                    var j=i+1;
+                    picsarray[i].src="images/"+j+".jpg";
+                    
+                }
+            }
+            function showall(){
+                document.getElementById('image_container').innerHTML="";
+                for (let i = 0; i <27; i++) {
+                    var img=document.createElement('img');
+                    var j=i+1;
+                    img.src="images/"+j+".jpg";
+                    document.getElementById('image_container').appendChild(img);
+                }
+            }
+            function showcakes(){
+                document.getElementById('image_container').innerHTML="";
+                for (let i = 0; i <9; i++) {
+                    var img=document.createElement('img');
+                    var j=i+1;
+                    img.src="images/"+j+".jpg";
+                    document.getElementById('image_container').appendChild(img);
+                }
+            }
+            function showcup(){
+                document.getElementById('image_container').innerHTML="";
+                for (let i = 9; i <18; i++) {
+                    var img=document.createElement('img');
+                    var j=i+1;
+                    img.src="images/"+j+".jpg";
+                    document.getElementById('image_container').appendChild(img);
+                }
+            }
+            function showpiz(){
+                document.getElementById('image_container').innerHTML="";
+                for (let i = 18; i <27; i++) {
+                    var img=document.createElement('img');
+                    var j=i+1;
+                    img.src="images/"+j+".jpg";
+                    document.getElementById('image_container').appendChild(img);
+                }
+            }
+        </script>
+        <div class="heading">
+            <h1>BMV's Bakery</h1>
+        </div>
+        <div class="navbar">
+            <button onclick="return(showall())">All</button>
+            <button onclick="return(showcakes())">Cakes</button>
+            <button onclick="return(showcup())">Cup Cakes</button>
+            <button onclick="return(showpiz())">Pizzas</button>
+        </div>
+        <div id="image_container">
+
+        </div>
+    </body>
+</html>
