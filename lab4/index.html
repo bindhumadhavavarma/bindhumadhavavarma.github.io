@@ -3,6 +3,7 @@
     <head>
         <title>lab4</title>
     </head>
+    <link rel="stylesheet" href="main.css">
     <style>img{width: 200px;}</style>
     <body onload="return(initialize())">
         <script>
@@ -13,10 +14,37 @@
                     var j=i+1;
                     picsarray[i].src="images/"+j+".jpg";
                     
-                }
-            
+                }}
+                function showall(){
                 document.getElementById('image_container').innerHTML="";
                 for (let i = 0; i <27; i++) {
+                    var img=document.createElement('img');
+                    var j=i+1;
+                    img.src="images/"+j+".jpg";
+                    document.getElementById('image_container').appendChild(img);
+                }
+            }
+            function cakes(){
+                document.getElementById('image_container').innerHTML="";
+                for (let i = 0; i <9; i++) {
+                    var img=document.createElement('img');
+                    var j=i+1;
+                    img.src="images/"+j+".jpg";
+                    document.getElementById('image_container').appendChild(img);
+                }
+            }
+            function cup(){
+                document.getElementById('image_container').innerHTML="";
+                for (let i = 9; i <18; i++) {
+                    var img=document.createElement('img');
+                    var j=i+1;
+                    img.src="images/"+j+".jpg";
+                    document.getElementById('image_container').appendChild(img);
+                }
+            }
+            function pizzas(){
+                document.getElementById('image_container').innerHTML="";
+                for (let i = 18; i <27; i++) {
                     var img=document.createElement('img');
                     var j=i+1;
                     img.src="images/"+j+".jpg";
@@ -28,7 +56,12 @@
         <div class="heading">
             <h1>BMV's Bakery</h1>
         </div>
-        
+        <div class="navbar">
+            <button onclick="return(showall())">all</button>
+            <button onclick="return(cakes())">cakes</button>
+            <button onclick="return(cup())">cupcakes</button>
+            <button onclick="return(pizzas())">pizzas</button>
+        </div>
         <div id="image_container" style="text-align: center;">
 
         </div>
