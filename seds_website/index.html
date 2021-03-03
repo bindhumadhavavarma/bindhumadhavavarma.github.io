@@ -4,6 +4,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=0.8">
       <title>SEDS-VITAP</title>
       <meta name="description" content="lorem ipsum dolor sit">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
       
         <script src="jquery-1.11.3.min.js"></script>
         <link rel="icon" href="images/logo (2).png">
@@ -14,6 +16,10 @@
         <link rel="stylesheet" href="main.css">
         <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
     </head>
+    <script>$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});</script>
     <body>
       <div style="min-height: 100vh;padding-top: 15vh;">
         <video src="images/backvideo.mp4" autoplay loop playsinline muted preload></video>
@@ -695,7 +701,7 @@
               </div>
           </footer>
       </div>
-      
+      <div class="se-pre-con"></div>
 
 
    
