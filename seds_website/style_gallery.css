@@ -140,7 +140,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #688f82;
+    background-color: rgba(0, 0, 0, 0.548);
     color: #fff;
     padding: 0.8em;
 }
@@ -149,7 +149,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #8f6868;
+    background-color: rgba(0, 0, 0, 0.548);
     color: #fff;
     padding: 0.8em;
 }
@@ -252,17 +252,17 @@
     .example-2 .button {
         transform: translate(5px, -50%);
         opacity: 1;
-        background-color: #743838;
         border-radius: 25px;
         padding: 5px 0px;
+        display: block;
     }
 
     .example-2 .buttoneven {
         transform: translate(5px, -50%);
         opacity: 1;
-        background-color: #387460;
         border-radius: 25px;
         padding: 5px 0px;
+        display: block;
     }
 
 
