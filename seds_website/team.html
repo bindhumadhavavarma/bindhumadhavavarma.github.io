@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
     <title>SEDS-VITAP</title>
     <script src="jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -26,7 +26,10 @@
     </style>
 
 </head>
-
+<script>$(window).load(function() {
+  // Animate loader off screen
+  $(".se-pre-con").fadeOut("slow");;
+});</script>
 <body >
     <video src="images/backvideo.mp4" autoplay loop playsinline muted preload></video>
     <div class="container-fluid" id="home">
@@ -47,19 +50,20 @@
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
+              <li class="nav-item" >
+                <a class="nav-link"  href="index.html#homw">About&nbsp;Us</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="events.html">Events</a>
-              </li>
-              
-              <li class="nav-item" >
-                <a class="nav-link"  href="index.html#homw">Aboutus</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="gallery.html">Gallery</a>
               </li>
               <li class="nav-item " id="scteam">
                 <a class="nav-link" href="#">Team</a>
               </li>
+             
+              <li class="nav-item ">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              
             </ul>
           </div>
           <span class="navbar-text small  mt-1 w-50 text-right order-1 order-md-last d-none d-sm-none d-md-none d-lg-block">
@@ -79,7 +83,7 @@
     <!-- ----------------------------------------------------------------------- -->
     <!-- ----------------------------------------------------------------------- -->
 
-    <section id="Team_HEAD" style="margin-top:70px;">
+    <section id="Team_HEAD" style="margin-top:70px;max-height: 150px;">
         <div class="sp-container">
             <div class="sp-content">
                 <div class="sp-globe"></div>
@@ -107,8 +111,9 @@
             document.getElementById("placeholder").innerHTML='<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="outteam.html" height="100%" width="100%" style="border:none"></iframe>';
         }
     </script>
+    <style>@media(max-width:560px){#btncontainer{padding-top: 20px;}}</style>
     <div class="container row" id="btncontainer" style="margin: 0 auto;background-color: rgba(0, 0, 0, 0.685);min-width: 100%;padding-bottom: 15px;margin-bottom: 10px;">
-      <button  class="col-xs-6" onclick="return(core())" style="width: min-content;padding-top: 0;"><div class="box" style="border-radius: 30px;">
+      <button  class="col-4" onclick="return(core())" style="padding-top: 0;"><div class="box" style="border-radius: 30px;margin-right: 15px;">
           <span  style="border-radius: 30px;"></span>
           
           <div class="content" >
@@ -118,8 +123,14 @@
              
           </div>
       </div></button>
-      
-      <button class="col-xs-6"  onclick="return(project())" style="width: min-content;padding-top: 0;"> <div class="box" style="border-radius: 30px;">
+      <style>
+        @media(min-width:560px){
+        #btncontainer button{
+          
+          max-width: 420px;
+        }}
+      </style>
+      <button class="col-4"  onclick="return(project())" style="padding-top: 0;"> <div class="box" style="border-radius: 30px;margin-left:15px ;margin-right: 15px;">
           <span style="border-radius: 30px;"></span>
           
           <div class="content" style="border-radius: 30px;">
@@ -131,7 +142,7 @@
           </div>
       </div></button>
       
-      <button class="col-xs-6"  onclick="return(outreach())" style="width: min-content;padding-top: 0;"> <div class="box" style="border-radius: 30px;">
+      <button class="col-4"  onclick="return(outreach())" style="padding-top: 0;"> <div class="box" style="border-radius: 30px;margin-left: 15px;">
           <span style="border-radius: 30px;"></span>
           
           <div class="content" style="border-radius: 30px;">
@@ -193,5 +204,5 @@
 
   
 </body>
-
+<div class="se-pre-con"></div>
 </html>

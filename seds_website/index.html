@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="style_gallery.css">
         <link rel="stylesheet" href="main.css">
         <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+        <style>.card{border: none;}</style>
     </head>
     <script>$(window).load(function() {
 		// Animate loader off screen
@@ -60,19 +61,20 @@
                 <li class="nav-item">
                   <a class="nav-link" href="index.html">Home</a>
                 </li>
+                <li class="nav-item" id="scabt">
+                    <a class="nav-link"  href="#">About&nbsp;Us</a>
+                  </li>
                 <li class="nav-item">
                   <a class="nav-link" href="events.html">Events</a>
                 </li>
               
-                <li class="nav-item" id="scabt">
-                  <a class="nav-link"  href="#">Aboutus</a>
-                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="team.html">Team</a>
+                  </li>
                 <li class="nav-item ">
                   <a class="nav-link" href="gallery.html">Gallery</a>
                 </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="team.html">Team</a>
-                </li>
+                
               </ul>
             </div>
             <span class="navbar-text small  mt-1 w-50 text-right order-1 order-md-last d-none d-sm-none d-md-none d-lg-block">
@@ -151,8 +153,8 @@
             
             <div class="tl-bg" style="background-image: url(images/event4.jpg)"></div>
             
-            <div class="tl-year" style="padding-top: 0;border: none;">
-                <div class="container" id="btncontainer" style="padding: 0;">
+            <div class="tl-year" style="padding-top: 0;border: none;width: 100%;height: 100%;">
+                <div class="container" id="btncontainer" style="padding: 0;height: 100%;">
                     <a href="events.html"><div class="box" style="width: fit-content;padding:0 15px 0 15px;border-radius: 30px;">
                         <span></span> 
                         
@@ -168,7 +170,7 @@
           </div>
         </section>
     <div id="teamlinks">
-        <section id="Team_HEAD">
+        <section id="Team_HEAD" style="max-height: 150px;">
           <div class="sp-container">
               <div class="sp-content">
                   <div class="sp-globe"></div>
@@ -190,8 +192,16 @@
         
           
     </div>
+    <style>
+        @media(min-width:560px){
+        #btncontainer a{
+          
+          max-width: 420px;
+        }}
+        @media(max-width:559px){#btncontainer a{padding: 0;text-align: center;}}
+      </style>
     <div class="container" id="btncontainer" style="background-color: rgba(0, 0, 0, 0.685);min-width: 100%;">
-        <a href="team.html"><div class="box">
+        <a class="col-4" href="team.html"><div class="box" style="border-radius: 30px;margin-right: 15px;">
             <span></span>
             
             <div class="content">
@@ -202,7 +212,7 @@
             </div>
         </div></a>
         
-        <a href="team1.html"> <div class="box" >
+        <a class="col-4" href="team1.html"> <div class="box" style="border-radius: 30px;margin-left:15px ;margin-right: 15px;">
             <span></span>
             
             <div class="content">
@@ -214,7 +224,7 @@
             </div>
         </div></a>
         
-        <a href="team2.html"> <div class="box">
+        <a class="col-4" href="team2.html"> <div class="box"  style="border-radius: 30px;margin-left: 15px;">
             <span></span>
             
             <div class="content">
