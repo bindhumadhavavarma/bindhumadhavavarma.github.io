@@ -635,3 +635,7 @@ left:50%;
 }
 #Modal_description{padding:25px;}
 .wrapper{border-radius: 25px;}
+@media(min-width:560px){
+.carousel-item img{
+    max-height: 500px;width: auto;
+}}

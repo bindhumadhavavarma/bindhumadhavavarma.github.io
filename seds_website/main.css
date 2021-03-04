@@ -8,7 +8,7 @@
 	height: 100%;
 	z-index: 9999;
 	background: url(images/Preloader_11.gif) center no-repeat #fff;
-  background-size: 35vw;
+  background-size: 30vw;
 }
 @media(max-width:560px){.se-pre-con{background-size: 35vh;}}
 *{
