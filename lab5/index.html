@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<body>
+    <head>
+       <link rel="stylesheet" href="main.css">
+        <script>
+            function loadxmlbtns(){
+                document.getElementById("placeholder2").innerHTML="";
+                document.getElementById("placeholder1").innerHTML="<button onclick='return(loadxmlcse())'>cse books</button><button onclick='return(loadxmlece())'>ece books</button><button onclick='return(loadxmlmech())'>mech books</button>"
+            }
+            function loadxmlcse() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("placeholder2").innerHTML="";
+                   cseprint(this);
+                }
+                function cseprint(xml){
+                    var xmlDoc=xml.responseXML;
+                    var text="";
+                    for(var i=0;i<xmlDoc.getElementsByTagName("book").length;i++){
+                        text +="<div class='card'><div>Name: "+xmlDoc.getElementsByTagName("book")[i].getElementsByTagName("name")[0].childNodes[0].nodeValue 
+                                + "</div><div>Author: "+xmlDoc.getElementsByTagName("book")[i].getElementsByTagName("author")[0].childNodes[0].nodeValue 
+                                + "</div><div>Description: "+xmlDoc.getElementsByTagName("book")[i].getElementsByTagName("description")[0].childNodes[0].nodeValue+"</div></div>";
+                        
+                    }
+                    document.getElementById("placeholder2").innerHTML=text;     
+                }
+            };
+
+
+            xhttp.open("GET", "cse.xml", true);
+            xhttp.send();
+            }
+            function loadxmlece() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("placeholder2").innerHTML="";
+                   eceprint(this);
+                }
+                function eceprint(xml){
+                    var xmlDoc=xml.responseXML;
+                    var text="";
+                    for(var i=0;i<xmlDoc.getElementsByTagName("book").length;i++){
+                        text +="<div class='card'><div>Name: "+xmlDoc.getElementsByTagName("book")[i].getElementsByTagName("name")[0].childNodes[0].nodeValue 
+                                + "</div><div>Author: "+xmlDoc.getElementsByTagName("book")[i].getElementsByTagName("author")[0].childNodes[0].nodeValue 
+                                + "</div><div>Description: "+xmlDoc.getElementsByTagName("book")[i].getElementsByTagName("description")[0].childNodes[0].nodeValue+"</div></div>";
+                        
+                    }
+                    document.getElementById("placeholder2").innerHTML=text;     
+                }
+            };
+            xhttp.open("GET", "ece.xml", true);
+            xhttp.send();
+            }
+
+
+            function loadxmlmech() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("placeholder2").innerHTML="";
+                   mechprint(this);
+                }
+                function mechprint(xml){
+                    var xmlDoc=xml.responseXML;
+                    var text="";
+                    for(var i=0;i<xmlDoc.getElementsByTagName("book").length;i++){
+                        text +="<div class='card'><div>Name: "+xmlDoc.getElementsByTagName("book")[i].getElementsByTagName("name")[0].childNodes[0].nodeValue 
+                                + "</div><div>Author: "+xmlDoc.getElementsByTagName("book")[i].getElementsByTagName("author")[0].childNodes[0].nodeValue 
+                                + "</div><div>Description: "+xmlDoc.getElementsByTagName("book")[i].getElementsByTagName("description")[0].childNodes[0].nodeValue+"</div></div>";
+                        
+                    }
+                    document.getElementById("placeholder2").innerHTML=text;     
+                }
+            };
+            xhttp.open("GET", "mech.xml", true);
+            xhttp.send();
+            }
+
+
+            function loadjson() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("placeholder2").innerHTML="";
+                    document.getElementById("placeholder1").innerHTML="";
+                    var myObj=JSON.parse(this.responseText);
+                    var text="";
+                    for(var i=0;i<myObj.books.length;i++){
+                        text+="<div class='card'><div>Name: "+myObj.books[i].name+"</div><div>Author: "+myObj.books[i].author+"</div><div>Description: "+myObj.books[i].description+"</div></div>"
+                    }
+                document.getElementById("placeholder2").innerHTML = text;
+                }
+            };
+            xhttp.open("GET", "general.json", true);
+            xhttp.send();
+            }
+        </script>
+    </head>
+    <body>
+        <div style="text-align: center;"><h1>XML and Json with AJAX</h1></div>
+        <div class="navbar">
+            <button onclick="return(loadxmlbtns())">getBooksfromXML</button>
+            <button onclick="return(loadjson())">getBooksfromJSON</button>
+            <div class="btncont" id="placeholder1">
+            
+            </div>
+        </div>
+        
+        <div id="placeholder2">
+
+        </div>
+    </body>
+</body>

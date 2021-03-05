@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Edited with XML Spy v4.2 -->
+<books>
+	<book>
+		<name>book MECH 1</name>
+		<author>author name 1</author>
+		<description>this book is very good. everyone must read it.</description>
+	
+	</book>
+	<book>
+		<name>book MECH 2</name>
+		<author>author name 2</author>
+		<description>this book is very good. everyone must read it.</description>
+	
+	</book>
+	<book>
+		<name>book MECH 3</name>
+		<author>author name 3</author>
+		<description>this book is very good. everyone must read it.</description>
+	
+	</book>
+	<book>
+		<name>book MECH 4</name>
+		<author>author name 4</author>
+		<description>this book is very good. everyone must read it.</description>
+	
+	</book>
+	<book>
+		<name>book MECH 5</name>
+		<author>author name 5</author>
+		<description>this book is very good. everyone must read it.</description>
+	
+	</book>
+    <book>
+		<name>book name 6</name>
+		<author>author name 6</author>
+		<description>two eggs, bacon or sausage, toast, and our ever-popular hash browns</description>
+	
+	</book>
+</books>

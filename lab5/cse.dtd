@@ -1,0 +1,4 @@
+<!ELEMENT note (name,author,description)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
