@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<body>
+    <head>
+        <script>
+            function loadfromxml() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("data").innerHTML="";
+                   
+                    document.getElementById("data").innerHTML=this.responseText;;
+                   
+                }
+            };
+
+            xhttp.open("GET", "cse.xml", true);
+            xhttp.send();
+            }
+            function loadfromjson() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("data").innerHTML = this.responseText;
+                    }
+                
+            };
+            xhttp.open("GET", "general.json", true);
+            xhttp.send();
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <button onclick="return(loadfromxml())">getBooksfromXML</button>
+            <button onclick="return(loadfromjson())">getBooksfromJSON</button>
+        </div>
+        <div id="data">
+
+        </div>
+    </body>
+</body>

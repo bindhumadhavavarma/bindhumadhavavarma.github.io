@@ -9,6 +9,7 @@
             }
             function loadxmlcse() {
             var xhttp = new XMLHttpRequest();
+            
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     document.getElementById("placeholder2").innerHTML="";
@@ -27,9 +28,9 @@
                 }
             };
 
-
             xhttp.open("GET", "cse.xml", true);
             xhttp.send();
+            
             }
             function loadxmlece() {
             var xhttp = new XMLHttpRequest();
