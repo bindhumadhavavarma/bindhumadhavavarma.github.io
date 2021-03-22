@@ -1,33 +1,34 @@
-{"books":[
 {
-    "name":"General book 1",
-    "author":"author name 1",
-    "description":"this book is very good everyone must read it."
-},
-{
-    "name":"General book 2",
-    "author":"author name 2",
-    "description":"this book is very good everyone must read it."
-},
-
-{
-    "name":"General book 3",
-    "author":"author name 3",
-    "description":"this book is very good everyone must read it."
-},
-{
-    "name":"General book 4",
-    "author":"author name 4",
-    "description":"this book is very good everyone must read it."
-},
-{
-    "name":"General book 5",
-    "author":"author name 5",
-    "description":"this book is very good everyone must read it."
-},
-{
-    "name":"General book 6",
-    "author":"author name 7",
-    "description":"this book is very good everyone must read it."
+    "books": [
+        {
+            "name": "General book 1",
+            "author": "author name 1",
+            "description": "this book is very good everyone must read it."
+        },
+        {
+            "name": "General book 2",
+            "author": "author name 2",
+            "description": "this book is very good everyone must read it."
+        },
+        {
+            "name": "General book 3",
+            "author": "author name 3",
+            "description": "this book is very good everyone must read it."
+        },
+        {
+            "name": "General book 4",
+            "author": "author name 4",
+            "description": "this book is very good everyone must read it."
+        },
+        {
+            "name": "General book 5",
+            "author": "author name 5",
+            "description": "this book is very good everyone must read it."
+        },
+        {
+            "name": "General book 6",
+            "author": "author name 7",
+            "description": "this book is very good everyone must read it."
+        }
+    ]
 }
-]}
