@@ -1,9 +1,11 @@
 *{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-body{
+html{
   scroll-behavior: smooth;
-  
+}
+#container1{
+  overflow-x: hidden;
 }
 a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     text-decoration: none;
@@ -210,3 +212,49 @@ tr:hover{
   background-color: rgba(128, 128, 128, 0.178);
 }
 .animation-element.slide-left.in-view:hover, .animation-element.slide-right.in-view:hover{transform: scale(1.1);}
+
+
+::-webkit-scrollbar {
+	width: 10px
+}
+::-webkit-scrollbar-track {
+	background: #080808
+}
+::-webkit-scrollbar-thumb {
+	background: #888
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #555
+}
+
+.project{
+  text-align: left;
+  margin-bottom: 50px;
+  --title-color:orangered;
+  --title-hover-color:black;
+  --desc-color:#fcd2c9ff;
+  --desc-hover-color:#fdf9d5;
+}
+.project .title{
+  transition: all ease 500ms;
+  background-color: var(--title-color);
+  border-radius: 10px;
+  width: fit-content;
+  padding: 10px;
+  color: navajowhite;
+  font-weight: bold;
+  margin: -60px 0 10px -45px;
+  z-index: 1;
+}
+.project .description{
+transition: all ease 500ms;
+  background-color: var(--desc-color);
+  padding: 35px 30px 20px 30px;
+  border-radius: 15px;
+  z-index: 0;
+  color: black;
+}
+.project .description:hover{
+  --title-color:var(--title-hover-color);
+  --desc-color:var(--desc-hover-color);
+}
