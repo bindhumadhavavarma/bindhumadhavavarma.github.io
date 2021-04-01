@@ -212,3 +212,4 @@ tr:hover{
   background-color: rgba(128, 128, 128, 0.178);
 }
 .animation-element.slide-left.in-view:hover, .animation-element.slide-right.in-view:hover{transform: scale(1.1);}
+
