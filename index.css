@@ -6,7 +6,10 @@ html{
 }
 #container1{
   overflow-x: hidden;
+ 
 }
+body{background-color: #15173d;}
+
 a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     text-decoration: none;
     outline: none;
@@ -110,9 +113,18 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     background-color: #15173d;
     min-height: 80vh;
 }
+#container2{
+  text-align: center;
+    color: white;
+    background-color: #15173d;
+    min-height: 80vh;
+    padding: 0;
+    margin: 0;
+}
 .jumbotron{
     background: none;
     margin-bottom: 0;
+    padding: 50px;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -257,4 +269,15 @@ transition: all ease 500ms;
 .project .description:hover{
   --title-color:var(--title-hover-color);
   --desc-color:var(--desc-hover-color);
+}
+button{
+  background: none;
+  border: none;
+}
+#container1{
+  animation: fadein ease-in 1s;
+}
+@keyframes fadein {
+  0% {opacity: 0;}
+  100%{opacity: 1;}
 }
