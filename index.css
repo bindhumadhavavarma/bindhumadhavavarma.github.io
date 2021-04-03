@@ -97,8 +97,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 {
     position: relative;
     transition: all 200ms ease-in;
-    transform: scale(1);  
-    background-color: #343a40; 
+    transform: scale(1); 
 
 }
 .responsivecard:hover
