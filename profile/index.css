@@ -76,10 +76,10 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     padding: 27px 0px;
 }
 .f_list{padding: 0;}
-.f_list li a{
+.f_list li button{
     color: white;
 }
-.f_list li a:hover {
+.f_list li button:hover {
     color: #5e2ced;
 }
 .btn {
