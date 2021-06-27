@@ -10,14 +10,37 @@ body {
     background-color: var(--primary);
 }
 
-.maincontainer1 {
-    padding: 50px;
-    color: var(--secondary);
-    min-height: 100vh;
-    background-image: url(images/Doodle\ round\ Dots.png);
-    background-position: -137px calc(100vh - 137px);
-    ;
-    background-repeat: no-repeat;
+@media(min-width:560px) {
+    .maincontainer1 {
+        padding: 50px;
+        color: var(--secondary);
+        min-height: 100vh;
+        background-image: url(images/Doodle\ round\ Dots.png);
+        background-position: -137px calc(100vh - 137px);
+        ;
+        background-repeat: no-repeat;
+    }
+}
+
+@media(max-width:559px) {
+    body {
+        background-image: url(images/Mobile\ Background.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .doodle {
+        display: none;
+    }
+    .maincontainer1 {
+        text-align: center;
+        padding: 50px;
+        color: var(--secondary);
+        min-height: 100vh;
+        background-image: url(images/Doodle\ round\ Dots.png);
+        background-position: -137px calc(100vh - 137px);
+        background-repeat: no-repeat;
+    }
 }
 
 .btn-primary {
