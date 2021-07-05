@@ -1,0 +1,52 @@
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+.mainContainer {
+    padding: 50px;
+}
+
+.fa-star {
+    color: gold;
+    font-size: 20px;
+}
+
+.languageName {
+    padding: 15px 25px;
+    border-radius: 15px;
+    background-color: gold;
+    color: black;
+    width: fit-content;
+}
+
+hr {
+    border: 1px solid grey;
+}
+
+.subContainer2 {
+    margin: 40px 0;
+    width: 100%;
+}
+
+.platformContainer {
+    text-align: center;
+}
+
+.Tile {
+    padding: 25px;
+    margin: 25px auto;
+    border-bottom: 5px skyblue solid;
+    background-color: rgba(135, 207, 235, 0.3);
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.Tile:hover {
+    transform: scale(1.2);
+}
