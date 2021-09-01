@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab3</title>
+        <link rel="stylesheet" href="main.css">
+        <style>
+            .header{
+                font-size: large;
+                padding: 10px;
+                padding-left: 15vw;
+                color: white;
+                background-color: #15173d;
+                position: relative;
+                left: 0;
+                
+            }
+            .header a{margin-left: 25px;}
+            #result{
+                background-color: white;
+                border-left: 2px solid black;
+                height: 100vh;
+                width:48vw;
+                position: relative;
+                right: 0;
+                padding:30px;
+            }
+            .wrapper{
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#" name="editor">
+            <div class="header">You can edit the code and try. <a href="#" class="btn" onclick="return(run())">Run</a></div>
+            <div class="wrapper">
+            <textarea name="inputcode" id="" style="width: 50vw;height: 100vh;padding:30px;">
+                <!DOCTYPE html>
+                <html>
+                <body>
+                    <div>i made the text area editable, so you can change the script and see the 
+                        results here.</div>
+                <h1>The ul element</h1>
+                
+                <ul>
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Milk</li>
+                </ul>
+                
+                </body>
+                </html>
+                
+            </textarea>
+            <div id="result">
+
+            </div></div>
+        </form>
+    </body>
+    <script type="text/javascript">
+        function run(){
+            var code=document.editor.inputcode.value;
+            document.getElementById("result").innerHTML=code;
+
+        }
+    </script>
+</html>

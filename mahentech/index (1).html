@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="Cybersecurity.png">
+    <title>Mahen Tech</title>
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="container-fluid maincontainer">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="padding: 10px;">
+        <a class="navbar-brand" href="#" style="font-size: 30px;">
+            <img src="Cybersecurity.png" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy">
+            Mahen Tech
+          </a>
+       
+    <div class="collapse navbar-collapse" id="navbarNavDropdown" style="position:absolute;right:15px;font-size: 20px;">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Aboutus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ceh">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact us</a>
+          </li>
+        </ul>
+      </div>
+</nav>
+<div class="container-fluid row body" style="background-color: rgb(19, 18, 18);">
+    <section class="container" id="description">
+        <div id="vertical"><i class="arrow left"></i> SCROLL DOWN </div>
+        <div class="content">
+            <div><img src="accredition.png" alt="" width="25%"></div>
+            <h1>Mahen Tech</h1>
+            <h2>EC-Council Accredited Training Center</h2>
+            <h2>We Make Security Professionals</h2>
+           
+                <a href="#" class="fa fa-facebook" style="width: 65px;"></a>
+                <a href="#" class="fa fa-twitter" style="width: 65px;"></a>
+                <a href="#" class="fa fa-linkedin" style="width: 65px;"></a>
+            
+        </div>
+    </section>
+    
+    <section class="container" id="description">
+        <div class="content">
+            <h1 id="heading" style="font-weight: 200;">Certified Ethical Hacker Training (C|EH)</h1>
+            <a href="#ceh" class="middle">Read more</a>
+        </div>
+    </section>
+    
+    <section class="container" id="description">
+        <div class="content">
+            <h1 id="heading" style="font-weight: 200;">Computer Hacking Forensic Investigator Course(C|HFI)</h1>
+            <a href="#chfi" class="middle">Read more</a>
+        </div>
+    </section>
+    
+    <section class="container" id="description">
+        <div class="content">
+            <h1 id="heading" style="font-weight: 200;">EC-Council Certified Security Analyst Program(ECSA)</h1>
+            <a href="#ecsa" class="middle">Read more</a>
+        </div>
+    </section>
+    
+    
+    <div id="set-height"></div>
+    <div id="video">
+        <video id="v0" tabindex="0", autobuffer preload>
+            <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="how-d.mp4"></source>
+        </video>
+    </div>
+    
+    <script src="sticky.js"></script>
+    <script>
+
+        enterView({
+            selector: 'section',
+            enter: function(el) {
+                el.classList.add('entered');
+            }
+        })
+    
+        var frameNumber = 0, 
+        playbackConst = 300, 
+        setHeight = document.getElementById("set-height"), 
+        vid = document.getElementById('v0'); 
+    vid.addEventListener('loadedmetadata', function() {
+    setHeight.style.height = Math.floor(vid.duration) *(playbackConst/2-150)+ "px";
+    });
+    function scrollPlay(){  
+    var frameNumber  = window.pageYOffset/playbackConst;
+    vid.currentTime  = frameNumber;
+    window.requestAnimationFrame(scrollPlay);
+    }
+    window.requestAnimationFrame(scrollPlay);
+    
+    </script>
+    
+</div>
+<div class="container-fluid row" style="background-color: white;position: sticky;padding: 10%;margin: 0 auto;text-align: center;">
+    <div class="container-fluid row" id="ceh">
+        <div class="col-md-6">
+            <h1>Certified Ethical Hacker (C|EH)</h1>
+            <div style="text-align: justify;">
+                Certified Ethical Hacker Training from Mahentech provides all the version of CEH including CEH v9 to keep up with the changing times.Authorized
+                 by EC-Council and using its official curriculum for training, Mahentech provides the best environment and infrastructure set-up to get you certified
+                  in ethical hacking. EC-Council’s CEH credential validates an IT security professional as a Penetration Tester or Ethical Hacker. Getting trained for
+                   CEH reinforces the capabilities of an individual to safeguard 
+                enterprise networks against the innumerable vulnerabilities and threats of a network as well as prevent all attempts of illegal hacking by intruders.
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="ceh.png" alt="">
+        </div>
+    </div>
+    <div class="container-fluid row" id="chfi" style="margin-top: 10%;">
+        <div class="col-md-6">
+            <img src="chfi.png" alt="">
+        </div>
+        <div class="col-md-6">
+            <h1>Computer Hacking Forensic Investigator (C|HFI)</h1>
+            <div style="text-align: justify;">
+                CHFI Course certifies individuals in the specific security discipline of computer forensics from a vendor-neutral perspective. Computer Hacking Forensic Investigation is the process of detecting hacking attacks and properly extracting evidence to report the crime and conduct audits to prevent future attacks. Computer forensics is simply the application of computer investigation and analysis techniques in the interests of determining potential legal evidence. Evidence might be sought in a wide range of computer crime or misuse, including but not limited to theft of trade secrets, theft of or destruction of intellectual property, and fraud.CHFI investigators can draw on an array of methods for discovering data that resides in a computer system, or recovering deleted, encrypted, or damaged file information.Mahentech is an Accredited Training Partner of EC-Council and our courses are run using the Official Curriculum.
+            </div>
+        </div>
+       
+    </div>
+    <div class="container-fluid row" id="ecsa" style="margin-top: 10%;">
+        <div class="col-md-6">
+            <h1>EC-Council Certified Security Analyst (ECSA)</h1>
+            <div style="text-align: justify;">
+                ECSA/LPT program is a comprehensive, standards-based, methodological approach to train and validate IT security professional Penetration Testing and IS Security Auditing capabilities. ECSA/LPT Program consists of two components i.e. ECSA Training and LPT Practical Exam. It uses simulated real-time scenarios to train students in standard penetration testing methodologies.professional as a Penetration Tester or Ethical Hacker. Getting trained for CEH reinforces the capabilities of an individual to safeguard enterprise networks against the innumerable vulnerabilities and threats of a network as well as prevent all attempts of illegal hacking by intruders.
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="ecsa.png" alt="">
+        </div>
+    </div>
+    <div class="container-fluid row" id="cbp" style="margin-top: 10%;">
+        <div class="col-md-6">
+            <img src="cbp.png" alt="">
+        </div>
+        <div class="col-md-6">
+            <h1>CERTIFIED BLOCKCHAIN PROFESSIONAL</h1>
+            <div style="text-align: justify;">
+                Blockchain , the cornerstone of a decentralization strategy, is a distributed database that is replicated across multiple nodes to enable immutable, permanent , Transprent and secure record-keeping of transactions. Essentially Blockchain is a self- regulated data storage and data transaction validation system.The Blockchain Technology is the only peer to peer decentralized network to authorize users to digitally sign transactions with 100% accuracy.Blockchain is gaining popularity across industries such as finance, government, insurance, logistics, media healthcare and many others for being a borderless network of value exchange in real time. 5 days Classroom Training Available for full details,kindly email or call on our contacts details.
+            </div>
+        </div>
+        
+    </div>
+    <div class="container-fluid row" id="contact" style="text-align: left;margin-top: 10%;background-color: wheat;padding: 20px;border-radius: 20px;">
+        <div class="col-md-6">
+            <h1>Contact us:</h1>
+            <h3>602, Jalpa Divine Jambli Gali Near Moksh Plaza, Ahead of Jain temple, Borivali West, Mumbai- 400092</h3>
+            <h3>Phone: +91 8655550168</h3>
+            <h3>Mail: info@mahentech.com</h3>
+        </div>
+        <div class="col-md-6" style="text-align: center;margin: auto 0;">
+            <a href="#" class="fa fa-facebook" style="width: 65px;"></a>
+                <a href="#" class="fa fa-twitter" style="width: 65px;"></a>
+                <a href="#" class="fa fa-linkedin" style="width: 65px;"></a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

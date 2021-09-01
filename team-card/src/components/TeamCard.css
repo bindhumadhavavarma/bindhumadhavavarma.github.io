@@ -1,0 +1,72 @@
+h3 {
+    font-weight: bold;
+}
+
+.fab,
+.fas {
+    padding: 12px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    transition: all 500ms;
+}
+
+.fab:hover,
+.fas:hover {
+    background: #222;
+    color: white;
+}
+
+#cards .card {
+    border-radius: 20px;
+    min-height: 300px;
+    font-size: large;
+}
+
+#cards .heading-border {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+}
+
+#cards .card:hover .user-picture {
+    position: absolute;
+    top: -40px;
+    right: 30px;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+}
+
+#cards .card .user-picture {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+#cards .card .user-content .user-name {
+    margin-right: 150px;
+}
+
+.card .fab,
+.card .fas {
+    color: black;
+}
+
+.card .fab:hover,
+.card .fas:hover {
+    color: white;
+}

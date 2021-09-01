@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab3</title>
+        
+    </head>
+    <body>
+        <form action="#" name="editor">
+            <div class="header"><a href="#" class="btn" onclick="return(run())">Run</a></div>
+            <div class="wrapper">
+            <textarea name="inputcode" id="" readonly style="height: 300px;">
+               <!DOCTYPE html>
+                <html>
+                    <body>
+                        
+                        <h1>The p element</h1>
+                        <p>This is a paragraph.</p>
+                        <p>This is a paragraph.</p>
+                        <p>This is a paragraph.</p>
+                    </body>
+                </html>
+            </textarea>
+            <div id="result">
+
+            </div></div>
+        </form>
+    </body>
+    <script type="text/javascript">
+        function run(){
+           
+            document.getElementById("result").innerHTML="<!DOCTYPE html><html><body><h1>The p element</h1><p>This is a paragraph.</p> <p>This is a paragraph.</p> <p>This is a paragraph.</p></body></html>";
+
+        }
+    </script>
+</html>
